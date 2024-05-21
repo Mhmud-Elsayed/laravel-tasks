@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\CatogryController;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\SupplyerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +22,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route :: get("/index",[CustomerController::class,"index"]);
+Route :: get("/CtogryIndex",[CatogryController::class,"index"]);
+Route :: get("/OrdeIindex",[OrderController::class,"index"]);
+Route :: get("/CartIndex",[CartController::class,"index"]);
+Route :: get("/ProductIndex",[ProductController::class,"index"]);
+Route :: get("/SupplyerIndex",[SupplyerController::class,"index"]);
