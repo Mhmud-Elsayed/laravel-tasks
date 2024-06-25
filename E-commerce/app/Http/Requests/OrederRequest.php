@@ -23,9 +23,14 @@ class OrederRequest extends FormRequest
     {
         return [
             "name" => "required|max:256|string",
-            "totalamount"=>"required|numeric",
+            "totalamount" => "required|numeric",
             "comments" => "required|string",
             "user_id" => "required|numeric",
+            
+            'product_id'=>"required|numeric",
+            'quantity'=>"required|numeric",
+            'price'=>"required|numeric",
+            
         ];
     }
 }
