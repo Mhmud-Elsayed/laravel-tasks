@@ -18,7 +18,7 @@ class OrdersController extends Controller
             "comments"=>$request->comments,
             "user_id"=>$request->user_id
         ]);
-        
+
         $orderItems=Order_Item::create([
             "product_id"=>$request->product_id,
             "quantity"=>$request->quantity,
@@ -34,5 +34,6 @@ class OrdersController extends Controller
             "order"=>$newOrder,
             "orderItems"=>$orderItems
         ]);
+
     }
-}
+   

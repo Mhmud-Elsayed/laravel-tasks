@@ -39,3 +39,4 @@ Route::resource("supplier", SupplierController::class);
 Route::get("/users",[UserController::class,"index"]);
 Route::post("/storeUser",[UserController::class,"store"]);
 Route::post("/deleteUser/{id}",[UserController::class,"destroy"]);
+Route::get("orders",[OrdersController::class,"index"]);
